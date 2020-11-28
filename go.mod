@@ -1,3 +1,3 @@
-module github.com/gofor-little/rand
+module github.com/gofor-little/xrand
 
-go 1.13
+go 1.15
