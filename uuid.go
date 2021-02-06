@@ -5,11 +5,11 @@ import (
 	"fmt"
 )
 
-// GenerateUUID generates Version 4 UUID compliant with RFC 4122.
+// UUIDV4 generates Version 4 UUID compliant with RFC 4122.
 // See https://tools.ietf.org/html/rfc4122 for more info.
 // Returns an error if the systems cryptographically secure random number generator fails,
 // in which case the caller should not continue.
-func GenerateUUID() (string, error) {
+func UUIDV4() (string, error) {
 	uuid := make([]byte, 16)
 
 	_, err := rand.Read(uuid)

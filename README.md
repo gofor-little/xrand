@@ -13,4 +13,4 @@
 * No dependencies outside the standard library
 
 ### Testing
-Run ```go test ./...``` in the root directory.
+Run ```go test -v -race ./...``` in the root directory.
