@@ -8,6 +8,7 @@ import "math/rand"
 func MathBytes(length uint) ([]byte, error) {
 	key := make([]byte, length)
 
+	/* #nosec */
 	_, err := rand.Read(key)
 	if err != nil {
 		return nil, err
